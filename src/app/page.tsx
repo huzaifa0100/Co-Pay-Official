@@ -8,7 +8,8 @@ import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import { Fosdoter } from "@/components/pricingSec";
 
-import { benefitOne, benefitThree, benefitTwo } from "@/components/data";
+import { benefitFour, benefitOne, benefitThree, benefitTwo } from "@/components/data";
+import Timeline from "@/components/workflow";
 export default function Home() {
   return (
     
@@ -26,6 +27,14 @@ export default function Home() {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <Benefits data={benefitThree} />
+      <Benefits imgPos="right" data={benefitFour} />
+      <SectionTitle
+        preTitle="Workflow"
+        title="How it works"
+      >
+        Streamline your healthcare experience by effortlessly managing co-payments with our user-friendly platform
+      </SectionTitle>
+      <Timeline />
       
       <Fosdoter />
 

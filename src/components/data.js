@@ -56,27 +56,49 @@ const benefitTwo = {
   ],
 };
 const benefitThree = {
-  title: "Increase Revenue with Paid Appointments",
-  desc: "Implement a paid appointment model to streamline payments and secure commitment from patients",
+  title: "AI-Driven SMS Conversations",
+  desc: "Engage patients instantly through AI-powered SMS, allowing for real-time interaction without signup.",
+  image: benefitOneImg,
+  bullets: [
+    {
+      title: "Quick Responses to Patient Inquiries",
+      desc: "Immediate answers enhance patient experience.",
+      icon: <FaceSmileIcon />,
+    },
+    {
+      title: "Improved Patient Engagement",
+      desc: "Real-time communication fosters loyalty.",
+      icon: <CursorArrowRaysIcon />,
+    },
+    {
+      title: "Increased Efficiency in Appointment Management",
+      desc: "Automated scheduling reduces admin tasks.",
+      icon: <ChartBarSquareIcon />,
+    },
+  ],
+};
+const benefitFour = {
+  title: "Pre-Visit Collection",
+  desc: "Streamline pre-visit collections to ensure timely payments and reduce billing errors.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Increased Cash Flow",
-      desc: "Upfront payments improve financial stability.",
+      title: "Reduced Billing Complications",
+      desc: "Fewer errors in financial transactions.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Higher Patient Commitment",
-      desc: "Patients are more likely to attend when they pay in advance.",
+      title: "Improved Cash Flow Management",
+      desc: "Timely collections support financial planning.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Flexibility in Payment Options",
-      desc: "Various payment methods make transactions easier.",
+      title: "Increased Patient Compliance with Payment Policies",
+      desc: "Clear communication of fees leads to better compliance.",
       icon: <SunIcon />,
     },
   ],
 };
 
 
-export {benefitOne, benefitTwo, benefitThree};
+export {benefitOne, benefitTwo, benefitThree, benefitFour};
