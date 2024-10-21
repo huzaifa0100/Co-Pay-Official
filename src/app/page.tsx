@@ -6,10 +6,12 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+import { Fosdoter } from "@/components/pricingSec";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { benefitOne, benefitThree, benefitTwo } from "@/components/data";
 export default function Home() {
   return (
+    
     <Container>
       <Hero />
       <SectionTitle
@@ -23,6 +25,9 @@ export default function Home() {
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <Benefits data={benefitThree} />
+      
+      <Fosdoter />
 
       <SectionTitle
         preTitle="Watch a video"
