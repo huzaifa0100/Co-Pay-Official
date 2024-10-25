@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/hero.png";
+import { Button } from "./button";
 
 export const Hero = () => {
   return (
@@ -16,10 +17,9 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+            <Button variant="primary" size="large">
                 Get Started
-              </a>
+              </Button>
               {/* <a
                 
                 className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
