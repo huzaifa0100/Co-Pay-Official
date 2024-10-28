@@ -19,5 +19,11 @@ export const workwithus = {
   buttonText: "Join Our Team", // Add buttonText property
   image: benefitTwoImg,
 };
+export const contact1 = {
+  title: "Lets Connect",
+  desc: "At CoPay Health, we help you manage your copay costs, making healthcare more affordable. Our goal is to simplify the payment process so you can focus on what matters most—your health. With our resources, you can easily understand your copay responsibilities and find savings on your medications and treatments.",
+  
+  image: benefitOneImg,
+};
 
 

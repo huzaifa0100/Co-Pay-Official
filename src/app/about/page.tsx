@@ -1,10 +1,10 @@
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Testimonials } from "@/components/Testimonials";
-import { AboutUs } from "@/components/aboutsec";
-import { ourmission, ourstory, workwithus } from "@/components/aboutsecdata";
+import { ourmission, ourstory, workwithus } from "@/components/data2";
 import Commits from "@/components/commitments";
 import { care, simple, trust } from "@/components/commits";
+import { Section } from "@/components/section";
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
         and patients.
       </SectionTitle>
 
-      <AboutUs data={ourstory} />
+      <Section data={ourstory} />
 
       <SectionTitle title="Our Commitments">
         COPAY HEALTH simplifies patient payments and reduces no-shows with
@@ -24,7 +24,7 @@ export default function About() {
       </SectionTitle>
       <Commits />
 
-      <AboutUs data={ourmission} />
+      <Section data={ourmission} />
 
       <SectionTitle
         // preTitle="Testimonials"
@@ -36,7 +36,7 @@ export default function About() {
 
       <Testimonials />
 
-      <AboutUs data={workwithus} imgPos="right" />
+      <Section data={workwithus} imgPos="right" />
     </Container>
   );
 }

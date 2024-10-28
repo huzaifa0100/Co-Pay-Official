@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import { Button } from "./button";
 
-interface AboutUsProps {
+interface SectionProps {
   imgPos?: "left" | "right";
   data: {
     imgPos?: "left" | "right";
@@ -15,7 +15,7 @@ interface AboutUsProps {
   };
 }
 
-export const AboutUs = (props: Readonly<AboutUsProps>) => {
+export const Section = (props: Readonly<SectionProps>) => {
   const { data } = props;
 
   return (

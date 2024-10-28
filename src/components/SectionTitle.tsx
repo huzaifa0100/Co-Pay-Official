@@ -13,15 +13,16 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
     <Container
       className={`flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
+      }`}
+    >
       {props.preTitle && (
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           {props.preTitle}
         </div>
       )}
-
+      {/* text-4xl font-bold text-gray-900 dark:text-white bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-fade-in-up */}
       {props.title && (
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent lg:leading-tight lg:text-4xl animate-fade-in-up">
           {props.title}
         </h2>
       )}
@@ -33,5 +34,4 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       )}
     </Container>
   );
-}
-
+};
