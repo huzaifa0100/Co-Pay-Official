@@ -1,7 +1,7 @@
 {
-  "name": "nextly-template",
-  "version": "2.0.0",
-  "description": "Nextly Landing Page Template",
+  "name": "co-pay",
+  "version": "2.0",
+  "description": "A Healthcare Software",
   "private": true,
   "scripts": {
     "dev": "next dev",
