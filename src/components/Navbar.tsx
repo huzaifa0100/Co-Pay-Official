@@ -31,8 +31,8 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center p-4 md:p-6 lg:p-8 mx-auto xl:px-1">
+    <div className="relative border-b border-gray-300 dark:border-gray-700">
+      <nav className="container flex flex-wrap items-center p-4 md:p-6 lg:p-8 mx-auto xl:px-1">
         {/* Logo and Navigation Container */}
         <div className="flex items-center flex-1">
           {/* Logo */}
@@ -78,7 +78,7 @@ export const Navbar = () => {
                     </div>
                   )}
                 </li>
-              ))}
+              ))} 
             </ul>
           </div>
         </div>

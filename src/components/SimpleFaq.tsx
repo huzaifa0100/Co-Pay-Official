@@ -1,38 +1,39 @@
 "use client";
 import React from "react";
 import { Container } from "@/components/Container";
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
 export const SimpleFaq = () => {
   return (
-    <Container className="!p-0">
-      <div className="p-2 mx-auto rounded-2xl">
+    <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap">
+      {/* FAQ Options Section - Left */}
+      <div className="w-full lg:w-3/5">
         {faqdata.map((item, index) => (
-          <div key={index} className="mb-5">
-            <Disclosure>
-              {({ open }) => (
-                <>
-                  <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
-                    <span>{item.question}</span>
-                    <ChevronUpIcon
-                      className={`w-5 h-5 text-indigo-500 transition-transform duration-200 ${
-                        open ? "transform rotate-180" : ""
-                      }`}
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
-                    {item.answer}
-                  </DisclosurePanel>
-                </>
-              )}
-            </Disclosure>
-          </div>
+          <Disclosure key={index} as="div" className="mb-4">
+            {({ open }) => (
+              <>
+                <DisclosureButton className="flex justify-between w-full p-4 text-left bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 focus:outline-none">
+                  <span className="font-medium">{item.question}</span>
+                  <ChevronUpIcon className={`w-5 h-5 transition-transform ${open ? "rotate-180" : ""}`} />
+                </DisclosureButton>
+                <DisclosurePanel className="p-4 bg-white rounded-lg">
+                  {item.answer}
+                </DisclosurePanel>
+              </>
+            )}
+          </Disclosure>
         ))}
+      </div>
+
+      {/* Heading and Description Section - Right */}
+      <div className="flex flex-col justify-center w-full lg:w-2/5">
+        <h2 className="text-3xl font-bold leading-tight tracking-tight text-gray-800 dark:text-white">
+          Frequently Asked Questions
+        </h2>
+        <p className="mt-4 text-lg leading-normal text-gray-500 dark:text-gray-300">
+          Have questions? We're here to help. If you don't find your answer here, feel free to contact our support team.
+        </p>
       </div>
     </Container>
   );
