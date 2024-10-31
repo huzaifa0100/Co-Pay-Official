@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 
-import benefitOneImg from "../../public/img/benefit-one.png"; // Change this to a relevant healthcare image
-import benefitTwoImg from "../../public/img/benefit-two.png"; // Change this to a relevant healthcare image
+import benefitOneImg from "../../public/img/benefit-one.png";
+import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const BlogDetail: React.FC = () => {
   return (
