@@ -10,7 +10,7 @@ export const ContactForm = () => {
       <div className={`flex flex-wrap items-center w-full lg:w-3/3`}>
         <div className="flex flex-col w-full mt-0">
           <h3 className="max-w-2xl text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-            Let's Connect
+            Let&apos;s Connect
           </h3>
           <p className=" py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
             At CoPay Health, we help you manage your copay costs, making healthcare more affordable. Our goal is to simplify the payment process so you can focus on what matters most—your health. With our resources.
@@ -137,7 +137,7 @@ export const ContactForm = () => {
             {/* Footer Text */}
             <div className="text-center">
               <p className="text-sm text-gray-500 dark:text-neutral-400">
-                We'll get back to you in 1-2 business days.
+                We&apos;ll get back to you in 1-2 business days.
               </p>
             </div>
           </form>

@@ -32,7 +32,7 @@ export const SimpleFaq = () => {
           Frequently Asked Questions
         </h2>
         <p className="mt-4 text-lg leading-normal text-gray-500 dark:text-gray-300">
-          Have questions? We're here to help. If you don't find your answer here, feel free to contact our support team.
+          Have questions? We&apos;re here to help. If you don&apos;t find your answer here, feel free to contact our support team.
         </p>
       </div>
     </Container>
@@ -53,7 +53,7 @@ const faqdata = [
   {
     question: "What is your refund policy?",
     answer:
-      "If you're not satisfied with your plan, you can request a refund within the first 30 days of purchase.",
+      "If you&apos;re not satisfied with your plan, you can request a refund within the first 30 days of purchase.",
   },
   {
     question: "Do you offer technical support?",

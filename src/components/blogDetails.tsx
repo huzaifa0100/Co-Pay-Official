@@ -31,7 +31,7 @@ const BlogDetail: React.FC = () => {
           </figure>
 
           <p className="text-lg text-gray-800 dark:text-neutral-200">
-            We're committed to fostering a culture of transparency in healthcare billing, making the copay process as straightforward as possible for both providers and patients.
+            We&apos;re committed to fostering a culture of transparency in healthcare billing, making the copay process as straightforward as possible for both providers and patients.
           </p>
 
           <blockquote className="text-center p-4 border-l-4 border-blue-500 bg-gray-100 dark:bg-neutral-800">

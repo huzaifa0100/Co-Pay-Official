@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Container>
       <SectionTitle title="Contact Us">
-        We'd love to talk how we can help you.
+        We&apos;d love to talk how we can help you.
       </SectionTitle>
 
       <ContactForm />
